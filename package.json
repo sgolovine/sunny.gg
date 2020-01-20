@@ -6,9 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "serve -s ./src -p 3000",
-    "minify:html": "node minify.js",
-    "minify:css": "yarn postcss src/index.css > build/index.css",
-    "minify": "yarn minify:html && yarn minify:css"
+    "build": "node minify",
+    "start:prod": "serve -s ./build -p 5000"
   },
   "author": "",
   "license": "MIT",
@@ -19,6 +18,7 @@
     "parcel": "^1.12.4",
     "postcss": "^7.0.26",
     "postcss-cli": "^7.1.0",
-    "serve": "^11.3.0"
+    "serve": "^11.3.0",
+    "uglifycss": "^0.0.29"
   }
 }

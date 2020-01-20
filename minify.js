@@ -1,8 +1,7 @@
 const htmlnano = require("htmlnano");
 const fs = require("fs");
 const path = require("path");
-const postcss = require("postcss");
-const cssnano = require("cssnano");
+const uglifycss = require("uglifycss");
 
 const htmlpath = path.resolve(__dirname, "src/index.html");
 const csspath = path.resolve(__dirname, "src/index.css");
@@ -10,6 +9,7 @@ const buildpath = path.resolve(__dirname, "build/");
 
 const htmlOutPath = path.resolve(__dirname, "build/index.html");
 const cssOutPath = path.resolve(__dirname, "build/index.css");
+
 const htmlOptions = {
   removeEmptyAttributes: true,
   collapseWhitespace: "conservative"
@@ -31,11 +31,25 @@ htmlnano
   })
   .catch(err => console.log(err));
 
-const css = fs.readFileSync(csspath).toString();
-postcss([css, cssnano])
-  .process(css)
-  .then(res => {
-    fs.writeFileSync(cssOutPath, res);
-    console.log(res);
-  })
-  .catch(err => console.log(err));
+// Copy CSS
+
+var uglified = uglifycss.processFiles([csspath], {
+  maxLineLen: 500,
+  expandVars: true
+});
+
+fs.writeFileSync(cssOutPath, uglified);
+console.log("Successfully wrote CSS");
+
+// Copy images
+fs.copyFile(
+  path.resolve(__dirname, "src/logo.png"),
+  path.resolve(__dirname, "build/logo.png"),
+  err => {
+    if (err) {
+      console.log("An error has occurred copying logo.png");
+      return;
+    }
+    console.log("copied logo.png");
+  }
+);
