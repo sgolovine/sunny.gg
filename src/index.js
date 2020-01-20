@@ -1,8 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Router from './js/Router'
 
-const App = () => {
-  return <p>Hello World</p>;
-};
-
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Router />, document.getElementById('root'))
