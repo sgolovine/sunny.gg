@@ -15,6 +15,7 @@ export default () => {
           several companies in the past including OnQ and Cox Automotive where I
           helped build exceptional mobile applications.
         </Bio>
+        <Link to={require("../assets/vcard.vcf")}>Add to Contacts</Link>
       </Section>
       <Section header="Contact Me">
         <Link to="mailto:sunny@golovinemail.org">

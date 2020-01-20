@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../profile.png";
+import logo from "../assets/profile.png";
 
 export const SiteHeader = () => (
   <HeaderContainer>
