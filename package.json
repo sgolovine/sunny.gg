@@ -1,23 +1,17 @@
 {
-  "name": "lite.sunny.sh",
+  "name": "sunny-sh",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "serve -s ./src -p 3000",
     "build": "node minify",
     "start:prod": "serve -s ./build -p 5000"
   },
-  "author": "",
+  "author": "Sunny Golovine",
   "license": "MIT",
   "devDependencies": {
-    "cssnano": "^4.1.10",
-    "html-minifier": "^4.0.0",
     "htmlnano": "^0.2.5",
-    "parcel": "^1.12.4",
-    "postcss": "^7.0.26",
-    "postcss-cli": "^7.1.0",
     "serve": "^11.3.0",
     "uglifycss": "^0.0.29"
   }
