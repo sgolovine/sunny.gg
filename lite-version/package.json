@@ -1,0 +1,17 @@
+{
+  "name": "lite.sunny.sh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve -s ./src -p 3000"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "html-minifier": "^4.0.0",
+    "parcel": "^1.12.4",
+    "serve": "^11.3.0"
+  }
+}
