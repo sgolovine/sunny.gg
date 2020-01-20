@@ -3,22 +3,11 @@
   "version": "1.0.0",
   "description": "Contact Me Landing Page",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sgolovine/sunny.sh.git"
-  },
-  "keywords": [
-    "landing",
-    "homepage",
-    "portfolio"
-  ],
   "author": "Sunny Golovine",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sgolovine/sunny.sh/issues"
-  },
-  "homepage": "https://github.com/sgolovine/sunny.sh#readme"
+  "scripts": {
+    "start": "parcel ./src/index.html -p 3000"
+  }
 }
+  
+
