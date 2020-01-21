@@ -16,10 +16,14 @@ import {
 import { AppContainer } from 'js/containers/AppContainer'
 import { HeaderContainer, Header, Subheader } from 'js/containers/Header'
 
+import iconLight from 'assets/icon.png'
+import iconDark from 'assets/icon.png'
+
 export default () => {
   return (
     <AppContainer>
       <HeaderContainer>
+        <img src={iconLight} height="128" width="128" />
         <Header>Sunny Golovine</Header>
         <Subheader>
           Software Engineer specializing in Mobile Applications and React Native
