@@ -8,10 +8,12 @@ export const HeaderContainer = styled.div`
 
 export const Header = styled.h1`
   font-size: 32px;
+  font-family: Roboto;
   margin-bottom: 10px;
 `
 export const Subheader = styled.h2`
   font-size: 20px;
   margin-left: 15%;
   margin-right: 15%;
+  font-family: Roboto;
 `

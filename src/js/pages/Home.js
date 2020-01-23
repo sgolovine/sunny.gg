@@ -11,13 +11,11 @@ import {
   FaGlobeEurope,
   FaInstagram,
   FaTwitter,
-  FaPaperclip,
 } from 'react-icons/fa'
 import { AppContainer } from 'js/containers/AppContainer'
 import { HeaderContainer, Header, Subheader } from 'js/containers/Header'
 
 import iconLight from 'assets/icon.png'
-import iconDark from 'assets/icon.png'
 
 export default () => {
   return (
@@ -53,7 +51,6 @@ export default () => {
         />
       </Section>
       <Section title="Links">
-        {/* <InternalLink href="/resume" name="Resume" icon={<FaPaperclip />} /> */}
         <Link
           icon={<FaLinkedin />}
           name="Linkedin"
@@ -92,4 +89,5 @@ export default () => {
 const Bio = styled.p`
   font-size: 18px;
   margin-bottom: 0.25em;
+  font-family: Roboto;
 `

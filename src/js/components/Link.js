@@ -29,6 +29,7 @@ export const StyledLink = styled.a`
   color: #3490de;
   display: flex;
   justify-content: space-between;
+  font-family: Roboto;
 `
 
 const StyledInternalLink = styled(Link)`
@@ -41,6 +42,7 @@ const StyledInternalLink = styled(Link)`
   color: #3490de;
   display: flex;
   justify-content: center;
+  font-family: Roboto;
 `
 
 const Left = styled.div`
@@ -49,4 +51,5 @@ const Left = styled.div`
 `
 const LinkText = styled.p`
   margin-left: 5px;
+  font-family: Roboto;
 `

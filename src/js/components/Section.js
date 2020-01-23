@@ -25,6 +25,7 @@ const SectionHeader = styled.h1`
   font-weight: bold;
   text-transform: uppercase;
   color: #393e46;
+  font-family: Roboto;
 `
 
 const SectionContent = styled.div``
