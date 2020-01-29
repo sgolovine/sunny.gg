@@ -1,5 +1,5 @@
 import { html } from "htm/preact";
-import { Link } from "./Components";
+import { Link } from "./components/Link";
 
 import { AppContainer } from "./containers/AppContainer";
 import { Header } from "./containers/Header";

@@ -18,7 +18,7 @@
     invariant "^2.2.4"
     semver "^5.5.0"
 
-"@babel/core@^7.4.4":
+"@babel/core@^7.4.4", "@babel/core@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.8.3.tgz#30b0ebb4dd1585de6923a0b4d179e0b9f5d82941"
   integrity sha512-4XFkf8AwyrEG7Ziu3L2L0Cv+WyY47Tcsp70JFmpftbAA1K7YL/sgE9jh9HyNj08Y/U50ItUchpN0w6HxAoX1rA==
@@ -1082,6 +1082,13 @@ babel-plugin-emotion@^10.0.27:
     escape-string-regexp "^1.0.5"
     find-root "^1.1.0"
     source-map "^0.5.7"
+
+babel-plugin-htm@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-htm/-/babel-plugin-htm-3.0.0.tgz#74f6688df5887066383ab1502edf51297ba9b114"
+  integrity sha512-liW2CNTK/6p1fdySX0b/wfc+7sZqF2iO3NLi9ylU6p5+SSk/0qs5M6UOUQ5r4RaC/nYgbM4XlAJF8VLJjX13OQ==
+  dependencies:
+    htm "^3.0.0"
 
 babel-plugin-macros@^2.0.0:
   version "2.8.0"
@@ -2592,7 +2599,7 @@ hsla-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/hsla-regex/-/hsla-regex-1.0.0.tgz#c1ce7a3168c8c6614033a4b5f7877f3b225f9c38"
   integrity sha1-wc56MWjIxmFAM6S194d/OyJfnDg=
 
-htm@^3.0.2:
+htm@^3.0.0, htm@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/htm/-/htm-3.0.2.tgz#ef1c3ebe312f7699a312e35d728fd8ca36fbfe44"
   integrity sha512-wcEhXjepeJ4tBG0LLDDxH2DrvA3yBTpiADqiDAscjaNQZrowLCWhf6HcxUfd4LtQ3saWTtnVPEsRQy59cuhWqw==
