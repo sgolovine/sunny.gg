@@ -10,6 +10,10 @@ const helloStyle = css`
 export const App = () => html`
   <div>
     <p className=${helloStyle}>Hello World</p>
-    <${Link} to="http://www.google.com" name="Google" />
+    <${Link}
+      detail="Google Home Page"
+      href="http://www.google.com"
+      name="Google"
+    />
   </div>
 `;

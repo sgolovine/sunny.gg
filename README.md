@@ -1,27 +1,23 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c536ddec-8779-4a15-9ed1-a5f2723aab68/deploy-status)](https://app.netlify.com/sites/sunny-sh/deploys)
 
-## sunny.sh
+[Visit Website](https://sunny.sh)
 
-A simple lightweight site for sharing contact information
+## sunnydotsh
 
-### Pre-requisites
+Tiny site powered by [htm](https://github.com/developit/htm) [preact](https://github.com/preactjs/preact) and [emotion](https://github.com/emotion-js/emotion). Tries to be as tiny and performant as possible for fast load times and minimal time to interaction.
 
-This project uses `nodejs` and `yarn` as core dev dependencies.
-Make sure you have a Node version of at least v10.15.0. Addtionally
-ensure that `yarn` is installed globablly by running `npm install -g yarn`
+## Development
+
+### Getting Started
+
+To start make sure you have `nodejs`, `npm` and `yarn` installed.
 
 ### Installation
 
-`yarn`
+To install project dependencies run `yarn`
 
-### Running in Development
+### Scripts
 
-WIP
+`yarn start` - Starts the development sever on port 3000
 
-### Running in Production
-
-WIP
-
-### Deployment
-
-Netlify deploys this site to [sunny.sh](https://sunny.sh) from the `master` branch. Any changes will be deployed
+`yarn build` - Builds the production version of the site
