@@ -1,20 +1,20 @@
 {
   "name": "sunny.sh",
   "version": "1.0.0",
-  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/c536ddec-8779-4a15-9ed1-a5f2723aab68/deploy-status)](https://app.netlify.com/sites/sunny-sh/deploys)",
+  "description": "Landing Page",
   "main": "index.js",
+  "license": "MIT",
+  "author": "Sunny Golovine",
+  "homepage": "https://sunny.sh",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel ./src/index.html -p 3000",
+    "build": "parcel build './src/index.html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sgolovine/sunny.sh.git"
+  "devDependencies": {
+    "parcel": "^1.12.4"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sgolovine/sunny.sh/issues"
-  },
-  "homepage": "https://github.com/sgolovine/sunny.sh#readme"
+  "dependencies": {
+    "htm": "^3.0.2",
+    "preact": "^10.2.1"
+  }
 }
