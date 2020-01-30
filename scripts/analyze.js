@@ -23,7 +23,7 @@ function _getSize(filePath) {
 function analyze(dirPath) {
   const files = fs.readdirSync(dirPath);
   files.forEach(item => {
-    const filePath = path.resolve(srcPath, item);
+    const filePath = path.resolve(dirPath, item);
     const fileSize = _getSize(filePath);
     console.log(`${filePath} - ${fileSize}`);
   });
