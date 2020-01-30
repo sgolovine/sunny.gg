@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "html:validate": "html-validate 'src/index.html'",
-    "start": "yarn serve ./src"
+    "validate:html": "html-validate 'src/index.html'",
+    "start": "yarn serve ./src",
+    "build": "rm -rf ./dist && node ./scripts/build.js",
+    "prod": "yarn serve ./dist"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,9 @@
   "homepage": "https://github.com/sgolovine/sunny.sh#readme",
   "devDependencies": {
     "html-validate": "^2.12.0",
-    "serve": "^11.3.0"
+    "htmlnano": "^0.2.5",
+    "posthtml": "^0.12.0",
+    "serve": "^11.3.0",
+    "uglifycss": "^0.0.29"
   }
 }
