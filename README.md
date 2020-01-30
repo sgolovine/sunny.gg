@@ -18,6 +18,8 @@ An very fast an tiny site. No JS, pure HTML and CSS.
 
 `yarn prod` after build, this will serve `dist/` instead of `src/`
 
+`yarn benchmark` - benchmark bundle size before / after minification
+
 ## Format
 
 Formatting is done via VSCode.
