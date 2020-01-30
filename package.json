@@ -1,0 +1,25 @@
+{
+  "name": "sunny.sh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "html:validate": "html-validate 'src/index.html'",
+    "start": "yarn serve ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgolovine/sunny.sh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sgolovine/sunny.sh/issues"
+  },
+  "homepage": "https://github.com/sgolovine/sunny.sh#readme",
+  "devDependencies": {
+    "html-validate": "^2.12.0",
+    "serve": "^11.3.0"
+  }
+}

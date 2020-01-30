@@ -1,0 +1,22 @@
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+  font-family: "Roboto";
+  font-size: "12px";
+}
+
+h1,
+h2,
+h3,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+hr {
+  top: 0;
+  bottom: 0;
+}
