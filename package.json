@@ -7,7 +7,9 @@
     "validate:html": "html-validate 'src/index.html'",
     "start": "yarn serve ./src",
     "build": "rm -rf ./dist && node ./scripts/build.js",
-    "prod": "yarn serve ./dist"
+    "prod": "yarn serve ./dist",
+    "analyze": "node ./scripts/analyze.js",
+    "benchmark": "yarn build && yarn analyze"
   },
   "repository": {
     "type": "git",

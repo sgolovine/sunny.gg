@@ -13,11 +13,9 @@ const htmlConfig = {
 };
 
 const destPath = path.resolve(__dirname, "../dist");
-const imgPath = path.resolve(destPath, "img");
 
 function setup() {
   fs.mkdirSync(destPath);
-  fs.mkdirSync(imgPath);
 }
 
 function copyFiles() {
