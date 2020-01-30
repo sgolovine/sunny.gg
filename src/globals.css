@@ -1,0 +1,33 @@
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+  font-family: "Roboto";
+}
+
+h1,
+h2,
+h3,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+hr {
+  top: 0;
+  bottom: 0;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 24px;
+}

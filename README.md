@@ -1,27 +1,27 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c536ddec-8779-4a15-9ed1-a5f2723aab68/deploy-status)](https://app.netlify.com/sites/sunny-sh/deploys)
+## Sunny.sh
 
-## sunny.sh
+An very fast an tiny site. No JS, pure HTML and CSS.
 
-A simple lightweight site for sharing contact information
+## Setup
 
-### Pre-requisites
-
-This project uses `nodejs` and `yarn` as core dev dependencies.
-Make sure you have a Node version of at least v10.15.0. Addtionally
-ensure that `yarn` is installed globablly by running `npm install -g yarn`
-
-### Installation
+#### Installing Dev Dependencies
 
 `yarn`
 
-### Running in Development
+#### Validation
 
-WIP
+`yarn start` start serving content from `src/`
 
-### Running in Production
+`yarn html:validate` to validate the html
 
-WIP
+`yarn build` to build the site
 
-### Deployment
+`yarn prod` after build, this will serve `dist/` instead of `src/`
 
-Netlify deploys this site to [sunny.sh](https://sunny.sh) from the `master` branch. Any changes will be deployed
+## Format
+
+Formatting is done via VSCode.
+
+## Building
+
+To build the site run `yarn build`. This site autodeploys from the `master` branch

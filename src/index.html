@@ -1,26 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!-- Meta Tags -->
+    <title>Sunny Golovine</title>
+
+    <!-- [META TAGS] -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#2196f3" />
+    <meta name="description" content="Landing page for Sunny Golovine" />
+    <!-- META / Robots -->
+    <meta name="robots" content="all" />
+    <meta name="googlebot" content="all" />
+    <meta name="googlebot-news" content="all" />
 
-    <!-- CSS RESET -->
-    <link rel="stylesheet" href="./reset.css" type="text/css" />
+    <!-- [ STYLESHEET ] -->
+    <link href="reset.css" rel="stylesheet" />
+    <link href="globals.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/ico" href="assets/favicon.ico" />
-
-    <!-- Fonts -->
+    <!-- [FONT] -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <title>Sunny Golovine</title>
   </head>
+
   <body>
-    <div id="root"></div>
-    <script src="index.js"></script>
+    <div id="root">
+      <div class="main-container">
+        <!------------------
+            HEADER
+         ------------------>
+        <div class="header-container">
+          <img alt="header-image" src="img/profile.svg" height="200px" />
+          <h2 class="header">Sunny Golovine</h2>
+          <h3 class="subheader">
+            Software Engineer specializing in Mobile Applications and React
+            Native
+          </h3>
+        </div>
+
+        <!------------------
+            ABOUT
+         ------------------>
+        <div class="section-container">
+          <h4 class="section-header">
+            About Me
+          </h4>
+          <hr />
+          <div class="section-body">
+            <p class="bio-text">
+              My name is Arseniy Avery (I go by Sunny Golovine). I am a Web and
+              Mobile developer specializing in React Native. I have worked for
+              several companies in the past including OnQ and Cox Automotive
+              where I helped build exceptional mobile applications.
+            </p>
+          </div>
+        </div>
+
+        <!------------------
+            CONTACT INFO
+         ------------------>
+        <div class="section-container">
+          <!-- header -->
+          <h4 class="section-header">
+            Contact Me
+          </h4>
+          <hr />
+          <!-- end header -->
+
+          <!-- Add to Contacts -->
+          <a
+            rel="noopener noreferrer"
+            class="link add-to-contacts"
+            href="./contact.csv"
+          >
+            <p class="link-name">Add To Contacts</p>
+          </a>
+
+          <!-- Email -->
+          <a
+            rel="noopener noreferrer"
+            class="link"
+            href="mailto:sunny@golovinemail.org"
+          >
+            <p class="link-name">Email</p>
+            <p class="link-desc">sunny@golovinemail.org</p>
+          </a>
+
+          <!-- Phone -->
+          <a rel="noopener noreferrer" class="link" href="tel:1-678-646-2358">
+            <p class="link-name">Phone</p>
+            <p class="link-desc">sunny@golovinemail.org</p>
+          </a>
+        </div>
+
+        <!------------------
+            LINKS
+         ------------------>
+        <div class="section-container">
+          <h4 class="section-header">
+            Links
+          </h4>
+          <hr />
+          <!-- Phone -->
+          <a
+            class="link"
+            target="_blank"
+            href="https://linkedin.com/in/SunnyGolovine"
+            rel="noopener noreferrer"
+          >
+            <p class="link-name">Linkedin</p>
+            <p class="link-desc">SunnyGolovine</p>
+          </a>
+
+          <!-- Phone -->
+          <a
+            class="link"
+            target="_blank"
+            href="https://glvn.co"
+            rel="noopener noreferrer"
+          >
+            <p class="link-name">Website</p>
+            <p class="link-desc">glvn.co</p>
+          </a>
+
+          <!-- Phone -->
+          <a
+            class="link"
+            target="_blank"
+            href="https://github.com/sgolovine"
+            rel="noopener noreferrer"
+          >
+            <p class="link-name">Github</p>
+            <p class="link-desc">sgolovine</p>
+          </a>
+
+          <a
+            class="link"
+            target="_blank"
+            href="https://instagram.com/glvn.tsx"
+            rel="noopener noreferrer"
+          >
+            <p class="link-name">Instagram</p>
+            <p class="link-desc">glvn.tsx</p>
+          </a>
+
+          <a
+            class="link"
+            target="_blank"
+            href="https://twitter.com/_glvn"
+            rel="noopener noreferrer"
+          >
+            <p class="link-name">Twitter</p>
+            <p class="link-desc">@_glvn</p>
+          </a>
+        </div>
+        <!-- END LINKS -->
+      </div>
+    </div>
   </body>
 </html>

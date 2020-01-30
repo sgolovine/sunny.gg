@@ -1,0 +1,7 @@
+{
+  "html.format.endWithNewline": true,
+  "html.format.extraLiners": "head, body, /html",
+  "html.format.wrapLineLength": 160,
+  "html.trace.server": "messages",
+  "html.format.indentInnerHtml": true
+}
