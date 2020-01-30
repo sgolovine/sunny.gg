@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "validate:html": "html-validate 'src/index.html'",
     "start": "yarn serve ./src",
     "build": "rm -rf ./dist && node ./scripts/build.js",
