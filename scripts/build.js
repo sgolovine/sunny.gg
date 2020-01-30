@@ -21,9 +21,16 @@ function setup() {
 }
 
 function copyFiles() {
-  const srcPath = path.resolve(__dirname, "../src/img/profile.svg");
-  fs.copyFileSync(profile, path.resolve(srcPath, "profile.svg"));
-  fs.copyFileSync(profile, path.resolve(srcPath, "contact.vcf"));
+  const srcPath = path.resolve(__dirname, "../src/");
+  const destPath = path.resolve(__dirname, "../dist/");
+  fs.copyFileSync(
+    path.resolve(srcPath, "profile.svg"),
+    path.resolve(destPath, "profile.svg")
+  );
+  fs.copyFileSync(
+    path.resolve(srcPath, "contact.vcf"),
+    path.resolve(destPath, "contact.vcf")
+  );
 }
 
 function minifyCSS() {
