@@ -1,6 +1,0 @@
-node_modules
-build
-.cache
-dist
-node_modules/.yarn-integrity
-yarn-error.log

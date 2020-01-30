@@ -1,7 +1,9 @@
 {
+  "presets": ["preact"],
   "plugins": [
+    ["@babel/transform-react-jsx", { "pragma": "h" }],
     [
-      "htm",
+      "babel-plugin-htm",
       {
         "pragma": "h"
       }
