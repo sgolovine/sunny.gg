@@ -4,7 +4,7 @@ h3,
 h4,
 a,
 p {
-  font-family: "Roboto", Sans-Serif;
+  font-family: Helvetica, sans-serif;
 }
 
 h1,
@@ -30,13 +30,4 @@ h1 {
 
 h2 {
   font-size: 24px;
-}
-
-/* roboto font */
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"),
-    url("./roboto.woff") format("woff"), url("./roboto.woff2") format("woff2");
 }

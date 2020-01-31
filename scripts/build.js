@@ -32,17 +32,6 @@ function copyFiles() {
     path.resolve(srcPath, "contact.vcf"),
     path.resolve(destPath, "contact.vcf")
   );
-
-  // Roboto Font
-  fs.copyFileSync(
-    path.resolve(srcPath, "roboto.woff"),
-    path.resolve(destPath, "roboto.woff")
-  );
-
-  fs.copyFileSync(
-    path.resolve(srcPath, "roboto.woff2"),
-    path.resolve(destPath, "roboto.woff2")
-  );
 }
 
 function minifyCSS() {

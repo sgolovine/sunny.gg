@@ -39,7 +39,7 @@
   color: #1565c0;
   display: flex;
   justify-content: space-between;
-  font-family: "Roboto", Sans-Serif;
+  font-family: Helvetica, sans-serif;
 }
 
 .add-to-contacts {
@@ -59,4 +59,9 @@
   font-weight: 600;
   bottom: 0;
   margin-bottom: 5px;
+}
+
+.bio-text {
+  line-height: 25px;
+  font-size: 18px;
 }
