@@ -24,6 +24,7 @@
   "devDependencies": {
     "html-validate": "^2.12.0",
     "htmlnano": "^0.2.5",
+    "lozad": "^1.14.0",
     "posthtml": "^0.12.0",
     "serve": "^11.3.0",
     "uglifycss": "^0.0.29"

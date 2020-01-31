@@ -33,7 +33,7 @@
             HEADER
          ------------------>
         <div class="header-container">
-          <img alt="header-image" src="profile.svg" height="200px" />
+          <img class="lozad" alt="header-image" data-src="./profile.svg" height="200px" />
           <h2 class="header">Sunny Golovine</h2>
           <h3 class="subheader">
             Software Engineer specializing in Mobile Applications and React
@@ -158,6 +158,12 @@
           </a>
         </div>
         <!-- END LINKS -->
+        <!-- [ Image Lazy Loading ] -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+        <script>
+          const observer = lozad()
+          observer.observe()
+        </script>
       </div>
     </div>
   </body>
