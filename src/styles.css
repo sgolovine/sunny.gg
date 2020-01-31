@@ -39,7 +39,7 @@
   color: #1565c0;
   display: flex;
   justify-content: space-between;
-  font-family: Roboto;
+  font-family: "Roboto", Sans-Serif;
 }
 
 .add-to-contacts {
