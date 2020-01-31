@@ -21,13 +21,27 @@ function setup() {
 function copyFiles() {
   const srcPath = path.resolve(__dirname, "../src/");
   const destPath = path.resolve(__dirname, "../dist/");
+  // Profile Pictures
   fs.copyFileSync(
     path.resolve(srcPath, "profile.svg"),
     path.resolve(destPath, "profile.svg")
   );
+
+  // VCard
   fs.copyFileSync(
     path.resolve(srcPath, "contact.vcf"),
     path.resolve(destPath, "contact.vcf")
+  );
+
+  // Roboto Font
+  fs.copyFileSync(
+    path.resolve(srcPath, "roboto.woff"),
+    path.resolve(destPath, "roboto.woff")
+  );
+
+  fs.copyFileSync(
+    path.resolve(srcPath, "roboto.woff2"),
+    path.resolve(destPath, "roboto.woff2")
   );
 }
 
