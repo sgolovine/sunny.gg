@@ -4,28 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "validate:html": "html-validate 'src/index.html'",
     "start": "yarn serve ./src",
-    "build": "rm -rf ./dist && node ./scripts/build.js",
-    "prod": "yarn serve ./dist",
-    "analyze": "node ./scripts/analyze.js",
-    "benchmark": "yarn build && yarn analyze"
+    "clean": "rm -rf ./dist",
+    "build": "yarn clean && node ./build.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sgolovine/sunny.sh.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Sunny Golovine",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sgolovine/sunny.sh/issues"
   },
   "homepage": "https://github.com/sgolovine/sunny.sh#readme",
   "devDependencies": {
+    "html-minifier": "^4.0.0",
     "html-validate": "^2.12.0",
     "htmlnano": "^0.2.5",
-    "posthtml": "^0.12.0",
-    "serve": "^11.3.0",
-    "uglifycss": "^0.0.29"
+    "serve": "^11.3.0"
   }
 }
