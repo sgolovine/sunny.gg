@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "sunny.sh",
+  "version": "0.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "preact-cli": "^3.0.0"
+  },
+  "dependencies": {
+    "preact": "^10.3.2",
+    "preact-render-to-string": "^5.1.4",
+    "tailwindcss": "^1.8.10"
+  },
+  "scripts": {
+    "start": "preact watch",
+    "build": "preact build",
+    "clean": "rm -rf build"
+  }
+}
