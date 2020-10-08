@@ -1,29 +1,22 @@
-## Sunny.sh
+# sunny.sh
 
-An very fast an tiny site. No JS, pure HTML and CSS.
+## CLI Commands
 
-## Setup
+```bash
+# install dependencies
+npm install
 
-#### Installing Dev Dependencies
+# serve with hot reload at localhost:8080
+npm run dev
 
-`yarn`
+# build for production with minification
+npm run build
 
-#### Validation
+# test the production build locally
+npm run serve
 
-`yarn start` start serving content from `src/`
+# run tests with jest and enzyme
+npm run test
+```
 
-`yarn html:validate` to validate the html
-
-`yarn build` to build the site
-
-`yarn prod` after build, this will serve `dist/` instead of `src/`
-
-`yarn benchmark` - benchmark bundle size before / after minification
-
-## Format
-
-Formatting is done via VSCode.
-
-## Building
-
-To build the site run `yarn build`. This site autodeploys from the `master` branch
+For detailed explanation on how things work, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
