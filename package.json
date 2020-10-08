@@ -5,7 +5,8 @@
   "license": "MIT",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
-    "preact-cli": "^3.0.0"
+    "preact-cli": "^3.0.0",
+    "serve": "^11.3.2"
   },
   "dependencies": {
     "preact": "^10.3.2",
@@ -15,6 +16,7 @@
   "scripts": {
     "start": "preact watch",
     "build": "preact build",
-    "clean": "rm -rf build"
+    "clean": "rm -rf build",
+    "serve": "serve -s build"
   }
 }
