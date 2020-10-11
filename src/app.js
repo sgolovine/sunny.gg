@@ -1,5 +1,6 @@
 import { AddToContactsButton } from "./components/AddToContactsButton";
 import { LinkButton } from "./components/LinkButton";
+// import { Dev } from "./components/Dev";
 import EmailIcon from "./svg/mail";
 import InstagramIcon from "./svg/instagram";
 import GithubIcon from "./svg/github";
@@ -18,7 +19,7 @@ const App = () => (
       <img src="./assets/profile-face.jpg" className="w-6/12" />
       <h1 className="text-2xl">Arseniy Golovine</h1>
     </div>
-    <h2 className="text-lg">About Me</h2>
+    <SectionHeader title="About Me" />
     <p className="text-md max-w-md">
       Hey! My name is Arseniy Golovine. I’m a Software Engineer currently living
       in Atlanta, GA. I spend my weekends either Kayaking some of the lakes
@@ -51,6 +52,8 @@ const App = () => (
       href="https://linkedin.com/in/SunnyGolovine"
       IconComponent={LinkedInIcon}
     />
+    {/* <SectionHeader title="Devtools" />
+    <Dev /> */}
   </div>
 );
 
