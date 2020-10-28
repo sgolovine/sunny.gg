@@ -25,8 +25,8 @@ const App = () => (
       in Atlanta, GA. I spend my weekends either Kayaking some of the lakes
       around Atlanta or working on my side hustle Webhost Watchdog.
     </p>
-    <SectionHeader title="Contact Me" />
-    <AddToContactsButton />
+    {/* <SectionHeader title="Contact Me" />
+    <AddToContactsButton /> */}
     <LinkButton
       title="Email"
       href="mailto:sunny@glvn.co"
