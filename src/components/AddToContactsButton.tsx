@@ -1,16 +1,17 @@
-import AddContactIcon from "../svg/addContact";
-import { checkIfInstagram } from "../helpers/checkIfInstagram";
+import { h } from 'preact'
+import AddContactIcon from '../svg/addContact'
+import { checkIfInstagram } from '../helpers/checkIfInstagram'
 
 export const AddToContactsButton = () => {
   const handleClick = () => {
     if (checkIfInstagram()) {
       alert(
         "Unfortunately this does not work properly from inside Instagram. Open this page in your phone's web browser and try again"
-      );
+      )
     } else {
-      window.open("/assets/contact_card.vcf");
+      window.open('/assets/contact_card.vcf')
     }
-  };
+  }
   return (
     <button
       onClick={handleClick}
@@ -21,5 +22,5 @@ export const AddToContactsButton = () => {
       </div>
       <p className="ml-4 text-gray-200 font-bold">Add To Contacts</p>
     </button>
-  );
-};
+  )
+}

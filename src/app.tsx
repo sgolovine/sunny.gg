@@ -1,17 +1,12 @@
-import { AddToContactsButton } from "./components/AddToContactsButton";
-import { LinkButton } from "./components/LinkButton";
-// import { Dev } from "./components/Dev";
-import EmailIcon from "./svg/mail";
-import InstagramIcon from "./svg/instagram";
-import GithubIcon from "./svg/github";
-import TwitterIcon from "./svg/twitter";
-import LinkedInIcon from "./svg/linkedin";
-
-const SectionHeader = ({ title }) => (
-  <div className="py-4">
-    <h2 className="text-lg">{title}</h2>
-  </div>
-);
+import { h } from 'preact'
+import { LinkButton } from './components/LinkButton'
+import { Dev } from './components/Dev'
+import EmailIcon from './svg/mail'
+import InstagramIcon from './svg/instagram'
+import GithubIcon from './svg/github'
+import TwitterIcon from './svg/twitter'
+import LinkedInIcon from './svg/linkedin'
+import { SectionHeader } from './components/SectionHeader'
 
 const App = () => (
   <div className="container mx-auto flex flex-col items-left py-16 px-4 max-w-md">
@@ -52,9 +47,9 @@ const App = () => (
       href="https://linkedin.com/in/SunnyGolovine"
       IconComponent={LinkedInIcon}
     />
-    {/* <SectionHeader title="Devtools" />
-    <Dev /> */}
+    <SectionHeader title="Devtools" />
+    <Dev />
   </div>
-);
+)
 
-export default App;
+export default App

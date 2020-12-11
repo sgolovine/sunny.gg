@@ -1,3 +1,4 @@
+import { h } from 'preact'
 export default () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -14,4 +15,4 @@ export default () => (
       fill="#fff"
     ></path>
   </svg>
-);
+)
